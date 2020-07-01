@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#content {
+  height: 100vh;
+  width: 100hv;
+}
+
+.hero-content {
+  background: url('./hero-image.jpg');
+  height: 100%;
+  width: 100%;
+}
