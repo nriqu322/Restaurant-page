@@ -10,10 +10,10 @@
   align-items: center;
   background: url('./hero-image.jpg') center;
   height: 100vh;
-  width: 100hv;
+  z-index: -1;
 }
 
-.hero-content {
+.main-content {
   color: #fff;
   font-size: 56px;
   text-transform: uppercase;
@@ -21,4 +21,29 @@
   text-shadow: 3px 3px 15px #000;
   letter-spacing: 0.1rem;
   font-family: 'Anton', sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav {
+  height: 80px;
+}
+
+.nav-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-item {
+  color: #fff;
+  font-size: 23px;
+  margin-right: 15px;
+  text-transform: uppercase;
 }

@@ -1,13 +1,12 @@
-import './style.css'
+import './style.css';
 
 const homePage = () => {
   const content = document.querySelector('#content');
+  const mainContent = document.createElement('div');
+  mainContent.classList.add('main-content', 'home-page');
+  mainContent.textContent = "The best F*cking meat balls ever!";
 
-  const heroContent = document.createElement('div');
-  heroContent.classList.add('hero-content');
-  heroContent.textContent = "The best F*cking meat balls ever!";
-
-  content.appendChild(heroContent);
+  content.appendChild(mainContent);
 }
 
 export default homePage;
