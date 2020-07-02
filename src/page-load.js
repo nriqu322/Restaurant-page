@@ -5,7 +5,7 @@ const renderPage = () => {
 
   const heroContent = document.createElement('div');
   heroContent.classList.add('hero-content');
-  heroContent.textContent = "The best MEAT BALLS ever!";
+  heroContent.textContent = "The best F*cking meat balls ever!";
 
   content.appendChild(heroContent);
 }
