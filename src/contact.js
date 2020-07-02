@@ -1,6 +1,7 @@
 const contactPage = () => {
   const content = document.querySelector('#content');
   const mainContent = document.createElement('div');
+  mainContent.id = 'main-content'
   mainContent.classList.add('main-content', 'contact-page');
   content.appendChild(mainContent);
 

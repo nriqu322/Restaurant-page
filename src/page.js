@@ -29,7 +29,7 @@ const headerPage = () => {
   navOptions.appendChild(contact);
 
   function clearContent() {
-    const mainContent = document.getElementsByClassName('main-content');
+    const mainContent = document.getElementById('main-content');
     mainContent.remove();
   }
 
