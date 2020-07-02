@@ -7,12 +7,12 @@ const menuPage = () => {
 
   const menuInfo = document.createElement('div');
   menuInfo.classList.add('menu-container');
-
-  const menuTitle = document.createElement('h3');
-  menutTitle.classList.add('title-section');
-  menutTitle.textContent = 'See our menu'
-
   mainContent.appendChild(menuInfo);
+
+  const menuTitle = document.createElement('h6');
+  menuTitle.classList.add('title-section');
+  menuTitle.textContent = 'See our menu';
+  
   menuInfo.appendChild(menuTitle);
 }
 

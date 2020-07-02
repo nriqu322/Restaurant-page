@@ -9,9 +9,9 @@ const contactPage = () => {
   contactInfo.classList.add('contact-container');
   mainContent.appendChild(contactInfo);
 
-  const contactTitle = document.createElement('h5');
+  const contactTitle = document.createElement('h6');
   contactTitle.classList.add('title-section');
-  contactTitle.textContent = 'Contact with us'
+  contactTitle.textContent = 'Contact with us';
 
   const contactForm = document.createElement('div');
   contactForm.classList.add('contact-form');
