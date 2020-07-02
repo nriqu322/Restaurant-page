@@ -1,4 +1,4 @@
-import content from './page-load';
-import renderPage from './page-load';
+import content from './home';
+import homePage from './home';
 
-renderPage();
+homePage();

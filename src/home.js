@@ -1,6 +1,6 @@
 import './style.css'
 
-const renderPage = () => {
+const homePage = () => {
   const content = document.querySelector('#content');
 
   const heroContent = document.createElement('div');
@@ -10,4 +10,4 @@ const renderPage = () => {
   content.appendChild(heroContent);
 }
 
-export default renderPage;
+export default homePage;
