@@ -1,5 +1,3 @@
-// import './style.css';
-
 const homePage = () => {
   const content = document.querySelector('#content');
   const mainContent = document.createElement('div');

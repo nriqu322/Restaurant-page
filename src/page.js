@@ -11,7 +11,6 @@ const headerPage = () => {
   content.appendChild(header);
   header.appendChild(navbar);
 
-  // const logo = document.createElement('div')
   const myLogo = new Image();
   myLogo.classList.add('logo');
   myLogo.src = logo;
