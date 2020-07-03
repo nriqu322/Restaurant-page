@@ -85,7 +85,7 @@ nav {
 }
 
 .title-section {
-  font-size: 42px;
+  font-size: 40px;
   margin: 1rem 0 3rem 0;
 }
 
@@ -128,7 +128,7 @@ nav {
 @media (max-width: 425px) {
   .title-section {
     margin-bottom: 1rem;
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .navbar-item {
