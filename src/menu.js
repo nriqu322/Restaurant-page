@@ -1,5 +1,6 @@
 const menuPage = () => {
   const content = document.querySelector('#content');
+  content.classList.add('menu-page');
   const mainContent = document.createElement('div');
   mainContent.id = 'main-content'
   mainContent.classList.add('main-content', 'menu-page');

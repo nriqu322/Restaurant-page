@@ -36,6 +36,8 @@ const headerPage = () => {
 
   function clearContent() {
     const mainContent = document.getElementById('main-content');
+    const content = document.getElementById('content');
+    content.className = "";
     mainContent.remove();
   }
 
