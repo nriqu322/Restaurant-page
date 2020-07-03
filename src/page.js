@@ -1,7 +1,7 @@
 import homePage from "./home";
 import menuPage from "./menu";
 import contactPage from "./contact";
-import logo from "./logo.png";
+import logo from "./images/logo.png";
 
 const headerPage = () => {
   const content = document.querySelector('#content');

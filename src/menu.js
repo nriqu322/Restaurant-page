@@ -17,12 +17,12 @@ const menuPage = () => {
   menuInfo.appendChild(menuTitle);
 
   const cardContainer = document.createElement('div');
-  cardContainer.classList.add('card-container', 'd-flex', 'row', 'col-12', 'col-md-6', 'col-lg-4');
+  cardContainer.classList.add('card-container', 'd-flex', 'row');
   menuInfo.appendChild(cardContainer);
 
   for (let i = 0; i < 7; i += 1) {
     const card = document.createElement('div');
-    card.classList.add('card');
+    card.classList.add('card', 'col-12', 'col-md-6', 'col-lg-4');
     card.id = `card-${i}`;
     card.textContent = 'Text Here'
     cardContainer.appendChild(card);
