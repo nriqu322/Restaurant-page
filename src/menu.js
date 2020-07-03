@@ -1,3 +1,11 @@
+import menuImage1 from './images/menu-image-1.jpg';
+import menuImage2 from './images/menu-image-2.jpg';
+import menuImage3 from './images/menu-image-3.jpg';
+import menuImage4 from './images/menu-image-4.jpg';
+import menuImage5 from './images/menu-image-5.jpg';
+import menuImage6 from './images/menu-image-6.jpg';
+
+
 const menuPage = () => {
   const content = document.querySelector('#content');
   content.classList.add('menu-page');
@@ -20,13 +28,18 @@ const menuPage = () => {
   cardContainer.classList.add('card-container', 'd-flex', 'row');
   menuInfo.appendChild(cardContainer);
 
-  for (let i = 0; i < 7; i += 1) {
+  const images = [menuImage1, menuImage2, menuImage3, menuImage4, menuImage5, menuImage6];
+
+  images.forEach(image => {
     const card = document.createElement('div');
     card.classList.add('card', 'col-12', 'col-md-6', 'col-lg-4');
-    card.id = `card-${i}`;
-    card.textContent = 'Text Here'
     cardContainer.appendChild(card);
-  }
+
+    const menuImage = document.createElement('img');
+    menuImage.classList.add('menu-image', 'img-thumbnail')
+    menuImage.src = image;
+    card.appendChild(menuImage);
+  });
 }
 
 export default menuPage;

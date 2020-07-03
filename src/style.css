@@ -101,6 +101,7 @@ nav {
 .card {
   color: #1c1b21;
   font-family: 'Roboto', sans-serif;
+  padding: 0;
 }
 
 @media (min-width: 768px) {
