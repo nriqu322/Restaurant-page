@@ -1,3 +1,5 @@
+import deal from './deal.png';
+
 const contactPage = () => {
   const content = document.querySelector('#content');
   content.classList.add('contact-page');
@@ -6,14 +8,14 @@ const contactPage = () => {
   mainContent.classList.add('main-content'); // 'contact-page');
   content.appendChild(mainContent);
 
-  const contactInfo = document.createElement('div');
-  contactInfo.classList.add('contact-container');
-  mainContent.appendChild(contactInfo);
-
   const contactTitle = document.createElement('h2');
   contactTitle.classList.add('title-section');
   contactTitle.textContent = 'Contact with us';
-  contactInfo.appendChild(contactTitle);
+  mainContent.appendChild(contactTitle);
+
+  const contactInfo = document.createElement('div');
+  contactInfo.classList.add('contact-container', 'd-flex','flex-column', 'flex-md-row', 'justify-content-between');
+  mainContent.appendChild(contactInfo);
 
   const contactForm = document.createElement('form');
   contactForm.classList.add('contact-form');
@@ -61,6 +63,11 @@ const contactPage = () => {
   submitBtn.setAttribute('type', 'submit');
   submitBtn.classList.add('btn', 'btn-primary');
   contactForm.appendChild(submitBtn);
+
+  const dealImg = new Image();
+  dealImg.classList.add('deal');
+  dealImg.src = deal;
+  contactInfo.appendChild(dealImg);
 }
 
 export default contactPage;
