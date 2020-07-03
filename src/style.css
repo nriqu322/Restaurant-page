@@ -109,12 +109,18 @@ nav {
   }
 }
 
-@media (max-width: 1022px) {
+@media (max-width: 767px) {
+  .deal {
+    margin-top: 2rem;
+    align-self: center;
+  }
+}
+
+@media (max-width: 1023px) {
   .deal {
     max-width: 300px;
     max-height: 300px;
-    margin-top: 2rem;
-    align-self: center;
+    align-self: top;
   }
 }
 

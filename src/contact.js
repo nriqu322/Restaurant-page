@@ -1,4 +1,4 @@
-import deal from './deal.png';
+import deal from './images/deal.png';
 
 const contactPage = () => {
   const content = document.querySelector('#content');
