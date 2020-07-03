@@ -28,18 +28,44 @@ const menuPage = () => {
   cardContainer.classList.add('card-container', 'd-flex', 'row');
   menuInfo.appendChild(cardContainer);
 
-  const images = [menuImage1, menuImage2, menuImage3, menuImage4, menuImage5, menuImage6];
+  const cardContent = [
+    [menuImage1, 'Classic Pork Ball with Original Stoemp & Gravy', '11 usd'], 
+    [menuImage2, 'Classic Pork Ball with Tasty Salad', '11 usd'],
+    [menuImage3, '4 Belgian ballekes with Tasty Salad', '10 usd'], 
+    [menuImage4, 'Kids menu: Belgian ballekes with stoemp', '7 usd'], 
+    [menuImage5, 'Delicious Veggie with Cold Pasta', '11 usd'], 
+    [menuImage6, 'Ball the Way: 2 persons', '35 usd']
+  ];
+  
 
-  images.forEach(image => {
+  cardContent.forEach(cardInfo => {
+    const [cardImage, cardTitle, cardPrice] = cardInfo;
+
     const card = document.createElement('div');
     card.classList.add('card', 'col-12', 'col-md-6', 'col-lg-4');
     cardContainer.appendChild(card);
 
     const menuImage = document.createElement('img');
     menuImage.classList.add('menu-image', 'img-thumbnail')
-    menuImage.src = image;
+    menuImage.src = cardImage;
     card.appendChild(menuImage);
+
+    const textContainer = document.createElement('div');
+    textContainer.classList.add('text-container');
+    card.appendChild(textContainer);
+
+    const menuTitle = document.createElement('div');
+    menuTitle.classList.add('card-title', 'font-weight-bold', 'font-italic');
+    menuTitle.textContent = cardTitle;
+    textContainer.appendChild(menuTitle);
+
+    const menuPrice = document.createElement('div');
+    menuPrice.classList.add('card-price');
+    menuPrice.textContent = cardPrice;
+    textContainer.appendChild(menuPrice);
   });
+
+  
 }
 
 export default menuPage;
