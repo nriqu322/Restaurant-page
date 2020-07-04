@@ -43,16 +43,25 @@ const headerPage = () => {
 
   home.addEventListener('click', () => {
     clearContent();
+    home.style.color = '#e4a356';
+    menu.style.color = '#fff';
+    contact.style.color = '#fff';
     homePage();
   })
 
   menu.addEventListener('click', () => {
     clearContent();
+    menu.style.color = '#e4a356';
+    home.style.color = '#fff';
+    contact.style.color = '#fff';
     menuPage();
   })
 
   contact.addEventListener('click', () => {
     clearContent();
+    contact.style.color = '#e4a356';
+    menu.style.color = '#fff';
+    home.style.color = '#fff';
     contactPage();
   })
 }
