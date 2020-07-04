@@ -4,8 +4,8 @@ const contactPage = () => {
   const content = document.querySelector('#content');
   content.classList.add('contact-page');
   const mainContent = document.createElement('div');
-  mainContent.id = 'main-content'
-  mainContent.classList.add('main-content'); // 'contact-page');
+  mainContent.id = 'main-content';
+  mainContent.classList.add('main-content');
   content.appendChild(mainContent);
 
   const contactTitle = document.createElement('h2');
@@ -14,7 +14,7 @@ const contactPage = () => {
   mainContent.appendChild(contactTitle);
 
   const contactInfo = document.createElement('div');
-  contactInfo.classList.add('contact-container', 'd-flex','flex-column', 'flex-md-row', 'justify-content-between');
+  contactInfo.classList.add('contact-container', 'd-flex', 'flex-column', 'flex-md-row', 'justify-content-between');
   mainContent.appendChild(contactInfo);
 
   const contactForm = document.createElement('form');
@@ -68,6 +68,6 @@ const contactPage = () => {
   dealImg.classList.add('deal');
   dealImg.src = deal;
   contactInfo.appendChild(dealImg);
-}
+};
 
 export default contactPage;

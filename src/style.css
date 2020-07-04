@@ -151,6 +151,7 @@ nav {
   color: #1c1b21;
   font-family: 'Roboto', sans-serif;
   padding: 0;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
