@@ -147,6 +147,11 @@ nav {
   font-size: 20px;
 }
 
+.card-container {
+  max-width: 1250px;
+  margin: auto;
+}
+
 .card {
   color: #1c1b21;
   font-family: 'Roboto', sans-serif;
