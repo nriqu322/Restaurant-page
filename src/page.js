@@ -1,12 +1,12 @@
-import homePage from "./home";
-import menuPage from "./menu";
-import contactPage from "./contact";
-import logo from "./images/logo.png";
+import homePage from './home';
+import menuPage from './menu';
+import contactPage from './contact';
+import logo from './images/logo.png';
 
 const headerPage = () => {
   const content = document.querySelector('#content');
-  const header = document.createElement('header')
-  const navbar = document.createElement('nav')
+  const header = document.createElement('header');
+  const navbar = document.createElement('nav');
 
   content.appendChild(header);
   header.appendChild(navbar);
@@ -16,7 +16,7 @@ const headerPage = () => {
   myLogo.src = logo;
   navbar.appendChild(myLogo);
 
-  const navOptions = document.createElement('div')
+  const navOptions = document.createElement('div');
   navOptions.classList.add('nav-options');
   navbar.appendChild(navOptions);
 
@@ -36,8 +36,7 @@ const headerPage = () => {
 
   function clearContent() {
     const mainContent = document.getElementById('main-content');
-    const content = document.getElementById('content');
-    content.className = "";
+    content.className = '';
     mainContent.remove();
   }
 
@@ -47,7 +46,7 @@ const headerPage = () => {
     menu.style.color = '#fff';
     contact.style.color = '#fff';
     homePage();
-  })
+  });
 
   menu.addEventListener('click', () => {
     clearContent();
@@ -55,7 +54,7 @@ const headerPage = () => {
     home.style.color = '#fff';
     contact.style.color = '#fff';
     menuPage();
-  })
+  });
 
   contact.addEventListener('click', () => {
     clearContent();
@@ -63,7 +62,7 @@ const headerPage = () => {
     menu.style.color = '#fff';
     home.style.color = '#fff';
     contactPage();
-  })
-}
+  });
+};
 
 export default headerPage;

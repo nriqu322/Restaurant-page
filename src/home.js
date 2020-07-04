@@ -2,13 +2,13 @@ const homePage = () => {
   const content = document.querySelector('#content');
   content.classList.add('home-page');
   const mainContent = document.createElement('div');
-  mainContent.id = 'main-content'
+  mainContent.id = 'main-content';
   mainContent.classList.add('main-content', 'd-flex', 'flex-column');
   content.appendChild(mainContent);
 
   const heroContent = document.createElement('div');
   heroContent.classList.add('hero-content', 'd-flex', 'justify-content-center', 'align-items-center');
-  heroContent.textContent = "The best F*cking meat balls ever!";
+  heroContent.textContent = 'The best F*cking meat balls ever!';
   mainContent.appendChild(heroContent);
 
   const dropdown = document.createElement('div');
@@ -30,14 +30,12 @@ const homePage = () => {
 
   const locals = ['Peru', 'Guatemala', 'Mexico', 'Morocco', 'Bolivia'];
 
-  locals.forEach(country => {
+  locals.forEach((country) => {
     const list = document.createElement('a');
     list.innerHTML = country;
     list.setAttribute('href', '#');
-
-    const dropLocation = document.querySelector('.dropdown-location')
     dropLocation.appendChild(list);
   });
-}
+};
 
 export default homePage;
