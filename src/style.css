@@ -147,7 +147,8 @@ nav {
   font-size: 20px;
 }
 
-.card-container {
+.card-container,
+.contact-container {
   max-width: 1250px;
   margin: auto;
 }
