@@ -12,7 +12,6 @@ const homePage = () => {
   mainContent.appendChild(heroContent);
 
   const dropdown = document.createElement('div');
-  // dropdown.classList.add('');
   mainContent.appendChild(dropdown);
 
   const locationContainer = document.createElement('div');
@@ -28,7 +27,7 @@ const homePage = () => {
   dropLocation.classList.add('dropdown-location', 'btn');
   locationContainer.appendChild(dropLocation);
 
-  const locals = ['Peru', 'Guatemala', 'Mexico', 'Morocco', 'Bolivia'];
+  const locals = ['Peru', 'Guatemala', 'Mexico', 'Morocco', 'Bolivia', 'Nigeria'];
 
   locals.forEach((country) => {
     const list = document.createElement('a');

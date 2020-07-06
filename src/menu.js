@@ -10,7 +10,7 @@ const menuPage = () => {
   content.classList.add('menu-page');
   const mainContent = document.createElement('div');
   mainContent.id = 'main-content';
-  mainContent.classList.add('main-content', 'menu-page');
+  mainContent.classList.add('main-content');
   content.appendChild(mainContent);
 
   const menuInfo = document.createElement('div');
