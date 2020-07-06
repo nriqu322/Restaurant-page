@@ -40,6 +40,14 @@ const headerPage = () => {
     mainContent.remove();
   }
 
+  myLogo.addEventListener('click', () => {
+    clearContent();
+    home.style.color = '#e4a356';
+    menu.style.color = '#fff';
+    contact.style.color = '#fff';
+    homePage();
+  });
+
   home.addEventListener('click', () => {
     clearContent();
     home.style.color = '#e4a356';
