@@ -14,7 +14,7 @@ This is a restaurant page with a home page, menu and contact page.
 * [Bootstrap](https://getbootstrap.com/)
 
 ## Live Version
-Check the live version [here](https://rawcdn.githack.com/nriqu322/Restaurant-page/04fdcc6b8c8719ef9e44d60cbb5886db69fc6773/dist/index.html).
+Check the live version [here](https://rawcdn.githack.com/nriqu322/Restaurant-page/9fe1a8d547ecd19740cb5868c66318514e27927e/dist/index.html).
 
 ![Sreenshot](/src/images/screenshot.png)
 

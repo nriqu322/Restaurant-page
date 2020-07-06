@@ -51,7 +51,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('./images/hero-image.jpg') center;
+  background: url('./images/hero-image.jpg') no-repeat center;
   height: 100vh;
   z-index: -1;
 }
@@ -121,6 +121,8 @@ nav {
   text-align: center;
   letter-spacing: 0.1rem;
   font-family: 'Anton', sans-serif;
+  height: auto !important;
+  margin-top: 80px;
 }
 
 .contact-page {
@@ -133,9 +135,13 @@ nav {
   color: #fff;
 }
 
+.menu-container {
+  margin-bottom: 3rem;
+}
+
 .title-section {
   font-size: 40px;
-  margin: 1rem 0 3rem 0;
+  padding: 2rem 0 2rem 0;
 }
 
 .form-control {
@@ -209,5 +215,10 @@ nav {
   .logo {
     max-width: 160px;
     margin-top: 8px;
+  }
+
+  .contact-page,
+  .menu-page {
+    margin-top: 100px;
   }
 }
